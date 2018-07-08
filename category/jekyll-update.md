@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: category
 title: Test Update
 category: jekyll update
 sidebar_link: true

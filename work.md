@@ -6,15 +6,17 @@ sidebar_link: true
 ---
 
 ## Digital Technology Intern
-### GE Digital
+#### GE Digital
 I started my first rotation with GE Digital (and my 4th rotation total) in August 2017. My team manages a lot of GE's data, including storing it in a database and providing APIs to interact with it. I did a variety of backend tasks for my team. I created a bunch of API endpoints for other teams as they requested them. I wrote testing files and automation scripts to improve our build/test/deploy process. I wrote and maintain the tool that is responsible for populating our database with information from the IT software ServiceNow. I created a chatbot that is integrated with Skype and Microsoft Teams that plugs into our data and allows users to ask questions like "What is Laura's phone number?" and "Who owns server 10.128.255.102?" I got a lot of exposure to new tools like Chef, Scalr, ElasticSearch, Postgres, Kafka, and Redis. I got a large variety of experiences and learned a lot about how to manage large amounts of data. I really feel like I made a difference this semester and I know management was impressed with my work because they agreed to send me to the Atlanta office for the summer.
 
+
 ## Software Engineering Coop
-### Siemens PLM Software
+#### Siemens PLM Software
 For my third rotation with Siemens, I was transferred to the UI/UX team. I was responsible for fixing bug reports and coverity issues. My big project for the semester was to extend our table editor functionality, which was based on QT. We wanted to have a column type "icon", and we wanted users to be able to hover over the icons and see tooltips. This was my first deep dive into NX's codebase (which is over a million lines) and it was pretty daunting. The project was very educational though. I learned a lot more about data structures and abstraction from this code than I did in class. Once I got my bearings, adding the "icon" column type and the tooltips was pretty straigtforward. The challenge came when I had to design and implement a method to filter by icon. I decided to display the filter dialog excel-style. There was a list of all the icons that appeared in the table, each with a checkbox next to it. Checked icons would stay, unchecked icons would be filtered out of the view. A cell could have multiple icons so I had to be careful that if a cell contained some checked icons and some unchecked icons I didn't filter it out. After a lot of drawing it out on paper and trial and error, I got an algorithm that worked! The other big struggle with this was fitting the code into the project structure. Filtering on other column types did not work the same way, so it was difficult to merge this code in without messing up anything else. But by the end of the semester I got it all working and I learned so much in the process.
 
+
 ## Applications Engineering Coop
-### Siemens PLM Software
+#### Siemens PLM Software
 Other co-ops and me at Siemens PLM Software
 My first co-op rotation was spent learning how to use Siemens’ CAD software, NX, and understanding the expected behavior of its Drafting-specific tools. I spent a lot of time manually testing the software for bugs. The main aspect of my job was recording autotests to test regression scenarios. This basically meant recording a session of NX in which I manually followed a series of steps which produced an error in a previous version of NX. Then, upon each new release of NX, my tests would be played back to make sure that the error did not occur again. I gained a firm grasp on how to use CAD software to model 3D objects and how to translate those models to 2D drawings.
 

@@ -35,8 +35,9 @@ To use a different theme (in my example [hydeout](https://github.com/fongandrew/
 add to Gemfile
 ```scss
 gem "jekyll-theme-hydeout"
+gem "jekyll-paginate"
 ```
-change in _config.yml
+In _config.yml change
 ```scss
 theme: minima
 ```
@@ -53,19 +54,26 @@ plugins:
   - github-pages
 ```
 
-On the command line run 
+On the command line install the dependencies by running 
 ```scss
 $ bundle install
 ```
-to install the dependencies
 
-Run 
+Now deploy the site to localhost:4000 by running 
 ```scss
 $ bundle exec jekyll serve
 ```
-to deploy the site to localhost:4000
 
-To move blog posts of the Home page:
+If this fails, try manually installing the packages on the command line:
+```scss
+gem install jekyll-feed
+gem install jekyll-paginate
+gem install jekyll-remote-theme
+gem install github-pages
+gem install jekyll-theme-hydeout
+```
+
+To move blog posts off the Home page:
 create new directory /blog/
 add an index.html file in that directory with the front matter: 
 ```scss
@@ -80,9 +88,4 @@ in _config.yml add the following lines:
 paginate: 5
 paginate_path: '/blog/page:num'
 sidebar_blog_link: '/blog'
-```
-
-in Gemfile, add
-```scss
-gem "jekyll-paginate"
 ```

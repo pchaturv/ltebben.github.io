@@ -5,15 +5,8 @@ permalink: /about/
 sidebar_link: true
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+My name is Laura Tebben and I am a senior studying computer science with a minor in mathematics at the University of Cincinnati, set to graduate in May 2019. I am a 4.0 student and a member of the University Honors Program. I am involved in ACM (Association for Computing Machinery) and am the treasurer for their sister organization ACM-W. I work with ACM throughout the year to organize RevolutionUC, the University's student-run hackathon.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+I love coding, cats, traveling, and spending time with friends. In my free time I work on personal programming projects and attend hackathons. You can see my work on my github page: github.com/ltebben. I completed my first 3 co-op rotations at at Siemens PLM Software, where I was a developer on the UI team of their CAD software, NX, and did quality assurance for the drafting department. I have been a Digital Technology Intern for GE Digital since August 2017, where I create APIs, write automation scripts, and maintain our application's backend. During class semesters, I am a TA for Models I and Models II, the freshan engineering courses that introduce students to MATLAB.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+I am excited about all the opportunities UC has given me. Co-op has been a great experience, and I am considering pursuing a MS in CS after graduation. With a masters and co-op under my belt, I have very high hopes for my future. While I'm still not 100% sure where I want to end up, I know I'd love to be a software engineer for a cutting-edge tech company.

@@ -20,14 +20,14 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: ltebben
-
+repository: ltebben/ltebben.github.io
 # Build settings
 markdown: kramdown
-remote_theme: fongandrew/hydeout
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
-  - jekyll-paginate
-  - jekyll-remote-theme
+    #- jekyll-paginate
+    #- jekyll-remote-theme
 
 paginate: 5
 

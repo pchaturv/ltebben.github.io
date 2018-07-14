@@ -1,22 +1,18 @@
-<nav id="custom-icon-links">
-    {% if site.github.repo %}
-      <a id="github-link"
-         class="icon" title="Github" aria-label="Github"
-         href="https://github.com/{{ site.github_username }}">
-        {% include svg/github.svg %}
-      </a>
-    {% endif %}
 
-    <a id="phone-link"
-        class="icon" title="Phone" aria-label="Phone"
-        href="tel:{{ site.phone }}">
-    {% include svg/phone.svg %}
-    </a>
-  
-    <a id="email-link"
-       class="icon" title="Email" aria-label="Email"
-       href="{{ site.email }}">
-      {% include svg/email.svg %}
-    </a>
-  
-</nav>
+<a id="github-link"
+    class="icon" title="Github" aria-label="Github"
+    href="https://github.com/{{ site.github_username }}">
+  {% include svg/github.svg %}
+</a>
+
+<a id="phone-link"
+    class="icon" title="Phone" aria-label="Phone"
+    href="tel:{{ site.phone }}">
+{% include svg/phone.svg %}
+</a>
+
+<a id="email-link"
+    class="icon" title="Email" aria-label="Email"
+    href="{{ site.email }}">
+  {% include svg/email.svg %}
+</a>

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Travel
-permalink: /work/
+permalink: /travel/
 sidebar_link: true
 ---
 

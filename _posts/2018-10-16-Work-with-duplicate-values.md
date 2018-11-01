@@ -3,14 +3,12 @@
 
 Let's create a dataframe that has multiple columns and rows has repeated values:
 
-
 ```python
 import pandas as pd
 df = pd.DataFrame({'a': [1,2,2,3,4,4,5],
                    'b': ['a','b','b','v','c','c','c']})
 print(df)
 ```
-
        a  b
     0  1  a
     1  2  b
@@ -19,8 +17,6 @@ print(df)
     4  4  c
     5  4  c
     6  5  c
-    
-
 We can see that both column a and b has rows that have duplicate values. This DF is very small so we can see the values but what if we have millions of rows. It is hard to know if any rows have duplicate values, so what we can do.
 
 We can inspect each column using 'duplicated' method of pandas. duplicated method will return a series object where each row is marked with either False or True ( I will explain in a minute what are our options of marking a row duplicate)
@@ -32,9 +28,6 @@ Let's run duplicated on our dataframe's 'a' column with keep assigne to False
 df.duplicated('a',keep=False)
 ```
 
-
-
-
     0    False
     1     True
     2     True
@@ -43,8 +36,6 @@ df.duplicated('a',keep=False)
     5     True
     6    False
     dtype: bool
-
-
 
 Sometime we need to know how many duplicates we are dealing with.
 
@@ -55,7 +46,6 @@ The easiest way to deal with it to add a 'is_duplicate' column to the df and the
 df['is_duplicate'] = df.duplicated('a', keep=False)
 print(df)
 ```
-
        a  b  is_duplicate
     0  1  a         False
     1  2  b          True
@@ -65,29 +55,19 @@ print(df)
     5  4  c          True
     6  5  c         False
     
-
-
 ```python
 df.is_duplicate.sum()
 ```
-
-
-
-
     4
-
-
 
 Now 'keep' can take False, 'first' or 'last' argument. These argument tells pandas how to mark duplicates when they were encountered. 
 
 'first' will mark the first encounter of duplicates with False but second onwards true(Mark duplicates as True except for the first occurrence.) . Like this:
 
-
 ```python
 df['is_duplicate'] = df.duplicated('a', keep='first')
 print(df)
 ```
-
        a  b  is_duplicate
     0  1  a         False
     1  2  b         False
@@ -105,10 +85,6 @@ print(df)
 #List all the duplicate items
 df[df['is_duplicate']]
 ```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -125,7 +101,7 @@ df[df['is_duplicate']]
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: left;">
       <th></th>
       <th>a</th>
       <th>b</th>
@@ -149,14 +125,10 @@ df[df['is_duplicate']]
 </table>
 </div>
 
-
-
-
 ```python
 df['is_duplicate'] = df.duplicated('a', keep='last')
 print(df)
 ```
-
        a  b  is_duplicate
     0  1  a         False
     1  2  b          True
@@ -166,7 +138,6 @@ print(df)
     5  4  c         False
     6  5  c         False
     
-
 'False' will make all duplicates as true(Mark all duplicates as True.). We used False above so we can know how many elements are duplicates.
 
 Now how to deal with duplicates. Most of the time we just want to drop the duplicate rows to clean the data
@@ -175,14 +146,10 @@ This can be done by using drop_duplicates method.
 
 Here you need to be careful about choosing the 'keep' option. If you want to keep at least one row of the duplicate item, you should use keep='first':
 
-
 ```python
 df.drop_duplicates('a', keep='first')
 
 ```
-
-
-
 
 <div>
 <style scoped>

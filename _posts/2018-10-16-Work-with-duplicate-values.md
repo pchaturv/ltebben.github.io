@@ -84,6 +84,8 @@ print(df)
 #List all the duplicate items
 df[df['is_duplicate']]
 ```
+
+
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -95,12 +97,12 @@ df[df['is_duplicate']]
     }
 
     .dataframe thead th {
-        text-align: left;
+        text-align: middle;
     }
 </style>
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: left;">
+    <tr style="text-align: middle;">
       <th></th>
       <th>a</th>
       <th>b</th>

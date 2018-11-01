@@ -80,7 +80,6 @@ print(df)
 
 'last' will make all duplicates true except the last one (Mark duplicates as True except for the last occurrence.). Like this:
 
-
 ```python
 #List all the duplicate items
 df[df['is_duplicate']]
@@ -96,7 +95,7 @@ df[df['is_duplicate']]
     }
 
     .dataframe thead th {
-        text-align: right;
+        text-align: left;
     }
 </style>
 <table border="1" class="dataframe">
